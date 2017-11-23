@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blog do Bruno</h1>
+
+<p>Testando o scaffold do Rails</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Conteúdo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.body %></td>
+        <td><%= link_to 'Mostrar', blog %></td>
+        <td><%= link_to 'Editar', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Deletar Post', blog, method: :delete, data: { confirm: 'Deseja confirmar a exclusão do post?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Post', new_blog_path %>
