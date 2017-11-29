@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    BrunocruzViewTool::Renderer.copyright "Bruno Cruz", "Todos os direitos reservados"
+  end
 end
