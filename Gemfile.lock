@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/brucruz/brunocruz_view_tool
-  revision: 5bced2ce7a2e4553fd4bec561cf9b52985ba91c2
-  specs:
-    brunocruz_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,6 +47,7 @@ GEM
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.3, < 2)
       sass (>= 3.5.2)
+    brunocruz_view_tool (0.1.0)
     builder (3.2.3)
     byebug (9.1.0)
     coderay (1.1.2)
@@ -197,7 +192,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap (~> 4.0.0.beta2.1)
-  brunocruz_view_tool!
+  brunocruz_view_tool (~> 0.1.0)
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.3)
