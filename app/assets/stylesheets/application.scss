@@ -161,3 +161,30 @@ body {
     width: 55rem;
   }
 }
+
+
+/* Custom styles */
+
+.card {
+  color: rgb(40, 40, 40);
+  text-shadow: none;
+}
+
+.card-body{
+  font-size: 14px;
+  text-align: left;
+}
+
+.form-control {
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom:0.5rem;
+  line-height: 0.9rem;
+}
+
+.auth-links a {
+  color: rgb(40, 40, 40);
+
+}
