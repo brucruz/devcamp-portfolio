@@ -1,9 +1,7 @@
-<h3><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h3>
-
-<p><%= portfolio_item.subtitle %></p>
-
-<p><%= portfolio_item.body %></p>
-
-<%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
-<%= link_to "Editar", edit_portfolio_path(portfolio_item.id) if logged_in?(:site_admin) %>
-<%= link_to 'Deletar', portfolio_path(portfolio_item), method: :delete, data: { confirm: 'Deseja confirmar a exclusão do item?'} if logged_in?(:site_admin)  %>
+<div class="card">
+  <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
+  <p class="card-text">
+    <span><h3><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></h3></span>
+    <%= portfolio_item.subtitle %>
+  </p>
+</div>
