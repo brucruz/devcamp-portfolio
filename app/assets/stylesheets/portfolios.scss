@@ -1,9 +1,5 @@
 @import "bootstrap";
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
-}
-
 .navbar {
   margin-bottom: 0;
 }
@@ -59,3 +55,8 @@ footer p {
   margin-bottom: .25rem;
 }
 
+/* Custom Styles*/
+
+.portfolio-form {
+  padding: 20px;
+}
