@@ -22,7 +22,15 @@
 
         <div class="cover-container">
 
-          <div id="background"></div>
+          <%= video_tag(
+              'back2.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'pexels-photo-256502.jpeg'
+            )
+            %>
 
           <%= render "shared/application_nav" %>
 
